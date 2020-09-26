@@ -8,4 +8,5 @@ router.use(authController.protect);
 router.post('/loadAllProducts', productController.addproduct);
 router.post('/products', productController.getAllProducts);
 router.put('/updateProduct', productController.updateProduct);
+router.post('/upload', productController.syncDataToAlgolia);
 module.exports = router;
